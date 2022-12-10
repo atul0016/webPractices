@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZOMATO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Pacifico&family=Righteous&family=Signika+Negative&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;1,200&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .a1 li,
+        .a2 li {
+            display: inline-block;
+            padding: 4px;
+            margin: 8px;
+
+        }
+
+        .a1 li a,
+        .a2 li a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        .a1,
+        .a2 {
+            list-style: none;
+            margin: 18px;
+        }
+
+        img {
+            height: 20px;
+            width: 20px;
+            position: relative;
+            top: 2px;
+            left: 20px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            padding: 8px;
+            margin: 8px;
+            font-size: 25px;
+
+        }
+
+        header {
+            background-image: linear-gradient(rgba(0, 20, 20, 0.6), rgba(0, 0, 28, 0.5)), url(/pizza-geb53bf3e9_1920.jpg);
+            width: 100vw;
+            height: 60vh;
+            position: relative;
+            bottom: 8px;
+            background-size: cover;
+            background-position: center;
+            margin: 0px;
+            font-family: 'Kanit', sans-serif;
+            font-family: 'Pacifico', cursive;
+            font-family: 'Righteous', cursive;
+            font-family: 'Signika Negative', sans-serif;
+
+        }
+
+        .body1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            color: white;
+        }
+
+        .body1 h1 {
+            font-size: 100px;
+            font-style: italic;
+            font-weight: 2400;
+        }
+
+        .body1 p {
+            font-size: 32px;
+            font-weight: 100;
+        }
+
+
+        .search1 img {
+            width: 20px;
+            height: 20px;
+            position: relative;
+            top: 8px;
+            right: 200px;
+
+
+        }
+
+        .search1 input {
+            font-size: 19px;
+            font-weight: lighter;
+            width: 400px;
+            border: white;
+
+        }
+
+        .search1 {
+            margin-top: 30px;
+            padding: 4px;
+            width: 500px;
+            height: 35px;
+            border-radius: 8px;
+            background-color: white;
+            display: flex;
+            justify-content: space-evenly;
+
+
+        }
+
+        .body2 {
+            margin-top: 5vh;
+            display: flex;
+            width: 100vw;
+
+            justify-content: center;
+            font-family: 'Kanit', sans-serif;
+            font-family: 'Pacifico', cursive;
+            font-family: 'Righteous', cursive;
+            font-family: 'Signika Negative', sans-serif;
+            font-family: 'Nunito Sans', sans-serif;
+        }
+
+        .o1,
+        .d1 {
+            margin: 0px;
+            padding: 0px;
+            width: 38vw;
+            height: 35vh;
+
+            border-radius: 20px;
+        }
+
+        .orderonline {
+            background-image: url(/pizza-gdb5b96f88_1920.jpg);
+            background-size: cover;
+            background-position: center;
+            width: 38vw;
+            height: 25vh;
+
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        .dining {
+            background-image: url(/restaurant-g350f6d46c_1920.jpg);
+            background-size: cover;
+            width: 38vw;
+            height: 25vh;
+
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            background-position: center;
+        }
+
+        .o1,
+        .d1 {
+            margin: 10px;
+            border: 1px solid rgb(215, 215, 215);
+        }
+
+        .o11,
+        .d11 {
+            margin-left: 20px;
+            margin-top: 12px;
+        }
+
+        .a11 {
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        .body3 {
+
+            display: flex;
+            width: 100vw;
+
+            justify-content: center;
+            font-family: 'Kanit', sans-serif;
+            font-family: 'Pacifico', cursive;
+            font-family: 'Righteous', cursive;
+            font-family: 'Signika Negative', sans-serif;
+            font-family: 'Nunito Sans', sans-serif;
+
+        }
+
+        .q1,
+        .q2,
+        .q3,
+        .q4 {
+            width: 18.28vw;
+            height: 45vh;
+            border: 2px solid rgb(207, 207, 207);
+            border-radius: 10px;
+            margin: 9.8px;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .q1 p,
+        .q2 p,
+        .q3 p,
+        .q4 p {
+            position: relative;
+            left: 12px;
+            font-size: larger;
+            bottom: 20px;
+        }
+
+        .q1 {
+            background-image: linear-gradient(rgba(25, 25, 25, 0.6), rgba(25, 25, 25, 0.6)), url(/jaydeep-gajera-7yb08BMYhmQ-unsplash.jpg);
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .q2 {
+            background-image: linear-gradient(rgba(25, 25, 25, 0.6), rgba(25, 25, 25, 0.6)), url(/mario-raj-ysmeQt1dzcw-unsplash.jpg);
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .q3 {
+            background-image: linear-gradient(rgba(25, 25, 25, 0.6), rgba(25, 25, 25, 0.6)), url(/juli-kosolapova-q_jKuy-cURg-unsplash.jpg);
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .q4 {
+            background-image: linear-gradient(rgba(25, 25, 25, 0.6), rgba(25, 25, 25, 0.6)), url(/robbie-down-LI8inyHnm_A-unsplash.jpg);
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .collections {
+            margin-top: 5vh;
+            margin-bottom: 2vh;
+            padding: 0px;
+            display: flex;
+            width: 100vw;
+            justify-content: center;
+            font-family: 'Nunito Sans', sans-serif;
+
+        }
+
+        .c1 {
+            text-align: left;
+            width: 77vw;
+        }
+
+        .c1 p {
+            font-size: 20px;
+
+        }
+
+        #cp {
+            margin-top: 8px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #cp a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .f1 p {
+            display: inline-block;
+            border: 1px solid black;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: large;
+            font-family: 'Nunito Sans', sans-serif;
+        }
+
+        .f1 h1 {
+            font-size: 50px;
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: bolder;
+            font-family: 'Kanit', sans-serif;
+            font-family: 'Pacifico', cursive;
+            font-family: 'Righteous', cursive;
+            font-family: 'Signika Negative', sans-serif;
+            font-style: italic;
+        }
+
+        .f1 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer1 {
+            margin-top: 3vh;
+            display: flex;
+            flex-direction: column;
+
+            width: 77vw;
+
+        }
+
+        footer {
+            margin-top: 7vh;
+            margin: bottom 10vh;
+            ;
+            display: flex;
+            width: 100vw;
+            justify-content: center;
+            background-color: rgb(247, 247, 247);
+        }
+
+        .footer2 {
+            margin-top: 3vh;
+            display: flex;
+            justify-content: center;
+            font-family: 'Nunito Sans', sans-serif;
+        }
+
+        .f2 {
+            width: 18vw;
+
+            margin-right: 18px;
+            margin-left: 4px;
+        }
+
+        .f2 h1 {
+            font-size: 15px;
+            margin-bottom: 8px;
+        }
+
+        .footer3 {
+            width: 78vw;
+            margin-top: 30px;
+            font-family: 'Nunito Sans', sans-serif;
+        }
+
+        .footer3 p {
+            margin-bottom: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar">
+            <ul class="a1">
+                <li><a href="b"><img src="/smartphone.png" alt=""></a></li>
+                <li><a href="">Get app</a></li>
+            </ul>
+            <ul class="a2">
+                <li><a href="">Investor realtions</a>
+                <li><a href="">Add restaurant</a>
+                <li><a href="">Log in</a>
+                <li><a href="">Sign up</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="body1">
+            <div>
+                <h1>zomato</h1>
+            </div>
+            <div>
+                <p>Discover the best food and drinks at your place</p>
+            </div>
+            <div class="search1">
+                <img src="/search.png" alt="">
+                <input type="text" name="search" placeholder="Search for restaurants, cuisine or a dish">
+            </div>
+        </div>
+
+    </header>
+
+    <!-- <div class="container bg-primary">
+        <div class="row">
+            <div class="col">
+                Column
+            </div>
+            <div class="col">
+                Column
+            </div>
+            <div class="col">
+                Column
+            </div>
+        </div>
+    </div> -->
+    <div class="body2">
+        <div class="o1">
+            <div class="orderonline"></div>
+            <div class="o11">
+                <p class="a11">Order online</p>
+                <p>Stay home and order at your door step.</p>
+            </div>
+        </div>
+        <div class="d1">
+            <div class="dining"></div>
+            <div class="d11">
+                <p class="a11">Dining</p>
+                <p>View the city's favourite dining venues.</p>
+            </div>
+        </div>
+    </div>
+    <div class="collections">
+        <div class="c1">
+            <div>
+                <h1>Collections</h1>
+            </div>
+            <div id="cp">
+                <p>Explore curated lists of top restaurants, cafes, pubs, and bars in Ranchi, based on trends</p>
+                <a href="">
+                    <p>All collections of your place &gt;</p>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <div class="body3">
+        <div class="q1">
+            <p>Trending this week.</p>
+        </div>
+        <div class="q2">
+            <p>Brillient biryanis.</p>
+        </div>
+        <div class="q3">
+            <p>Outdoor seating.</p>
+        </div>
+        <div class="q4">
+            <p>Great Cafes.</p>
+        </div>
+    </div>
+    <div class="body4">
+        <div class="">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer1">
+            <div class="f1">
+                <h1>zomato</h1>
+                <div>
+                    <p>India</p>
+                    <p>English</p>
+                </div>
+            </div>
+            <div class="footer2">
+
+                <div class="f2">
+                    <h1>ABOUT ZOMATO</h1>
+                    <p>Who we are</p>
+                    <p>Blog</p>
+                    <p>Work with us</p>
+                    <p>Investor relations</p>
+                    <p>Report fraud</p>
+                </div>
+                <div class="f2">
+                    <h1>ZOMAVERSE</h1>
+                    <p>Zomato</p>
+                    <p>Feeding India</p>
+                    <p>Hyper pure</p>
+                    <p>Zomaland</p>
+
+                </div>
+                <div class="f2">
+                    <h1>FOR RESTAURANTS</h1>
+                    <p>Partner with us</p>
+                    <p>Our app</p>
+
+                </div>
+                <div class="f2">
+                    <h1>LEARN MORE</h1>
+                    <p>Privacy</p>
+                    <p>Security</p>
+                    <p>Terms</p>
+                    <p>Site maps</p>
+                </div>
+                <div class="f2">
+                    <h1>SOCIAL LINKS</h1>
+                    <p>Who we are</p>
+                    <p>Blog</p>
+                    <p>Work with us</p>
+                    <p>Investor relations</p>
+                    <p>Report fraud</p>
+                </div>
+            </div>
+            <div class="footer3">
+                <hr>
+            </div>
+            <div class="footer3">
+                <p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and
+                    Content Policies. All trademarks are properties of their respective owners. 2008-2022 © Zomato™ Ltd.
+                    All rights reserved.</p>
+            </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>

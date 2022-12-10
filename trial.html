@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li {
+            float: left;
+            list-style: none;
+            padding: 0px 10px;
+        }
+        li a{
+            text-decoration: none;
+            color: red;
+        }
+        .head1 {
+            border: 2px solid black;
+            overflow: auto;
+           
+        }
+        .head2 h1{
+            
+            display: inline-block;
+            padding: 0px 10px;
+        }
+        .head2{
+            border: 2px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="head1">
+            <ul><li><a href="">about</a> </li>
+            <li><a href="">home</a></li>
+        <li><a href="">contact us</a></li>
+    <li><a href="">help</a></li></ul>
+        </div>
+    </header>
+    <header>
+        <div class="head2">
+            <h1>HOME</h1>
+            <h1>ABOUT</h1>
+            <h1>CONTACT US</h1>
+            <h1>HELP</h1>
+        </div>
+    </header>
+    <script>
+        console.log("Who the hell are you ?");
+       
+        let a=1;
+        let b=4;
+        let c=8;
+        if(a>=b && a>=c)
+        {
+            console.log(a+" is greatest number");
+        }
+        else if(b>=a && b>=c)
+        {
+            console.log(b+" is greatest number");
+        }
+        else
+        {
+            console.log(c+" i.e c is greatest number");
+        }
+        let employee={
+            name : "Atul",
+            id: 123444
+        }
+        
+        console.log(employee["name" ])
+        function greet(n1,n2="Kumar"){
+            console.log("Good morning "+n1+" and "+n2);
+            return(n1);
+        }
+       
+        let kr=greet("atul");
+        console.log(kr);
+    </script>
+    
+</body>
+</html>

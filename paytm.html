@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans:wght@300&family=Roboto:wght@100;300;400;700;900&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    * {
+        padding: 0px;
+        margin: 0px;
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .na2 {
+        display: flex;
+        width: 50vw;
+        justify-content: space-between;
+    }
+
+    header {
+        padding: 15px;
+        font-size: 15x;
+        font-weight: bolder;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .nav2 {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 450;
+        height: 50px;
+        background-image: linear-gradient(rgba(198, 198, 198, 0.6), rgba(228, 228, 228, 0.6), rgba(240, 240, 240, 0.6));
+    }
+
+    .body1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 15vh 0vw;
+
+    }
+
+    .b1 {
+        width: 38vw;
+        height: 40vh;
+        margin-left: 10vw;
+        position: relative;
+        top: -15vh;
+
+    }
+
+    .b1 div {
+        margin-bottom: 5vh;
+
+    }
+
+    #b11 {
+        font-size: 30px;
+        font-weight: lighter;
+
+    }
+
+    #b12 {
+        font-size: larger;
+        font-weight: 100;
+
+    }
+
+    #b13 a {
+        text-decoration: none;
+        color: white;
+        background-color: black;
+    }
+
+    .na1 {
+        position: relative;
+        left: 5vw;
+    }
+
+    .na3 a {
+        position: relative;
+        right: 5vw;
+        border: 2px solid #00baf2;
+        padding: 8px 20px;
+        border-radius: 20px;
+
+        background-color: #00baf2;
+        color: white;
+    }
+
+    .na3 a:hover {
+        position: relative;
+        right: 5vw;
+        border: 2px solid;
+        padding: 8px 20px;
+        border-radius: 20px;
+
+        animation: abc 0.2s ease-in 0s 1 forwards;
+    }
+
+    @keyframes abc {
+        from {
+            background-color: #00baf2;
+            color: white;
+
+        }
+
+        to {
+            background-color: white;
+            color: #00baf2;
+        }
+
+    }
+
+    #b13 a {
+        display: flex;
+        border: 2px solid black;
+        border-radius: 20px;
+        padding: 8px 20px;
+        background-color: black;
+        width: 10vw;
+
+    }
+
+    #b13 a:hover {
+        display: flex;
+        border: 2px solid black;
+        border-radius: 20px;
+        padding: 8px 20px;
+
+        width: 10vw;
+
+        animation: abcd 0.2s ease-in 0s 1 forwards;
+    }
+
+    @keyframes abcd {
+        from {
+            background-color: black;
+            color: white;
+
+        }
+
+        to {
+            background-color: white;
+            color: black;
+        }
+    }
+
+    .bb {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10vh 0vh;
+        background-color: #00baf2;
+    }
+
+    .bb2 {
+        display: flex;
+        margin-top: 15px;
+        justify-content: space-between;
+        width: 80vw;
+
+    }
+
+    .bb1 {
+        color: white;
+        position: relative;
+        left: -22.5vw;
+        margin-bottom: 20px;
+        font-size: larger;
+    }
+
+    .bb2 a {
+
+        color: white;
+        line-height: 25px;
+        height: 80px;
+        padding: 30px 30px 25px 12px;
+        font-weight: bold;
+        width: 6.5vw;
+        font-size: 17px;
+        border-radius: 8px;
+
+    }
+
+    .bb2 a:hover {
+
+        animation: abcc 0.2s ease-in 0s 1 forwards;
+    }
+
+    @keyframes abcc {
+        from {
+            background-color: #00baf2;
+
+
+        }
+
+        to {
+            background-color: #00a3d4;
+
+        }
+    }
+
+    .bbb {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10vh 0vh 8vh 0vh;
+        background-color: #002970;
+    }
+
+    .bbb2 {
+        display: flex;
+        margin-top: 15px;
+        justify-content: space-between;
+        width: 80vw;
+
+    }
+
+    .bbb1 {
+        color: white;
+        position: relative;
+        left: -27.2vw;
+        margin-bottom: 20px;
+        font-size: larger;
+    }
+
+    .bbb2 a {
+
+        color: white;
+        line-height: 25px;
+        height: 80px;
+        padding: 30px 30px 25px 12px;
+        font-weight: bold;
+        width: 6.5vw;
+        font-size: 17px;
+        border-radius: 8px;
+
+    }
+
+    .bbb2 a:hover {
+        animation: abcc 0.2s ease-in 0s 1 forwards;
+    }
+
+    @keyframes abcc {
+        from {
+            background-color: #002970;
+
+
+        }
+
+        to {
+            background-color: #002566;
+
+        }
+    }
+
+
+    .bbbb {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(245, 245, 245);
+    }
+
+    .body2 {
+        display: flex;
+        justify-content: space-around;
+        width: 70vw;
+        align-items: center;
+        padding: 60px 50px;
+        background-color: white;
+        margin-top: 6vh;
+    }
+
+    .bd1 {
+        width: 23vw;
+    }
+
+    #a111 {
+        display: flex;
+        align-items: center;
+        font-weight: bolder;
+        margin-bottom: 25px;
+
+
+    }
+
+    #a111 div img {
+        margin-right: 15px;
+    }
+
+    #bd11 {
+        font-size: large;
+        margin-bottom: 40px;
+    }
+
+    #bd12 {
+        font-weight: 450;
+        margin-bottom: 40px;
+        width: 28vw;
+
+    }
+
+    #bd13 a {
+        padding: 12px 30px;
+        border: 2px solid black;
+        border-radius: 40px;
+        background-color: black;
+        color: white;
+    }
+
+    .bd2 {
+        position: relative;
+        right: -5vw;
+    }
+
+    #bd13 a:hover {
+        border: 2px solid black;
+        background-color: white;
+        color: black;
+    }
+
+    .bodyy2 {
+        margin: 13vh 0vh -2vh 0vh;
+        font-size: 25px;
+        position: relative;
+        left: -17vw;
+    }
+    #bd43 a {
+        padding: 12px 30px;
+        border: 2px solid #002970;
+        border-radius: 40px;
+        background-color: #002970;
+        color: white;
+    }
+
+    #bd43 a:hover {
+        border: 2px solid #002970;
+        background-color: white;
+        color: black;}
+
+</style>
+
+<body>
+    <header>
+        <div class="na1">
+            <a href=""><img src="/paytm_logo.png" alt="" height="55px" width="185px"></a>
+        </div>
+        <div class="na2">
+            <div><a href="">Paytm For consumer</a></div>
+            <div><a href="">Paytm for Business</a></div>
+            <div><a href="">Company</a></div>
+            <div><a href="">Investor Relations</a></div>
+            <div><a href="">Career</a></div>
+        </div>
+        <div class="na3">
+            <a href="">Sign In</a>
+        </div>
+    </header>
+    <div class="nav2">
+        <div><strong> No Wallet KYC Required </strong>
+            😊
+            to pay using UPI on Paytm.
+            <strong>Learn more.</strong>
+        </div>
+    </div>
+    <div class="body1">
+        <div class="b1">
+            <div>
+                <img src="/unnamed.png" alt="" height="100px" width="100 px">
+            </div>
+            <div id="b11">
+                <h1>
+                    India's Most-loved Payments App
+                </h1>
+            </div>
+            <div id="b12">
+                <h4>
+                    Recharge & pay bills, book flights & movie tickets, open a savings account, invest in stocks &
+                    mutual funds, and do a lot more.
+                </h4>
+            </div>
+            <div id="b13">
+                <a href=""> <span>Download Paytm App</span>
+                </a>
+            </div>
+        </div>
+        <div class="b2">
+            <img src="/1656568118664.webp" alt="" height="500px" width="550px">
+        </div>
+    </div>
+    <div class="bb">
+        <div class="bb1">
+            <h1>
+                Recharge & Pay Bills on Paytm.
+            </h1>
+
+        </div>
+        <div class="bb2">
+
+            <a href="">
+                Recharge &nbsp;&nbsp;&nbsp; prepaid mobile &gt;
+            </a>
+
+
+            <a href="">
+                Pay&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; rent &nbsp;&nbsp; payment &gt;
+            </a>
+
+
+            <a href="">
+                Pay &nbsp;&nbsp;&nbsp; electricity bill &gt;
+            </a>
+
+
+            <a href="">
+                Recharge &nbsp;&nbsp;&nbsp; DTH connection &gt;
+            </a>
+
+
+            <a href="">
+                Book &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; gas&nbsp;cylinder &gt;
+            </a>
+
+
+            <a href="">
+                Pay &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; credit card bill &gt;
+            </a>
+
+
+            <a href="">
+                All &nbsp;&nbsp;&nbsp; payment services &gt;
+            </a>
+
+
+        </div>
+    </div>
+    <div class="bbb">
+        <div class="bbb1">
+            <h1>
+                Book & Buy on Paytm.
+            </h1>
+
+        </div>
+        <div class="bbb2">
+
+            <a href="">
+                Movie tickets &gt;
+            </a>
+
+
+            <a href="">
+                Flight &nbsp;&nbsp; tickets &gt;
+            </a>
+
+
+            <a href="">
+                Bus &nbsp; &nbsp; tickets &gt;
+            </a>
+
+
+            <a href="">
+                Train &nbsp;&nbsp; tickets &gt;
+            </a>
+
+
+            <a href="">
+                Car &nbsp; & &nbsp; Bikes &gt;
+            </a>
+
+
+            <a href="">
+                International flights &gt;
+            </a>
+
+
+            <a href="">
+                Invest in Stokes &gt;
+            </a>
+
+
+        </div>
+    </div>
+    <div class="bbbb">
+        <div class="bodyy2">
+            <h1>
+                Paytm Payment Instruments
+            </h1>
+        </div>
+        <div class="body2">
+            <div class="bd1">
+                <div id="a111">
+                    <div><img src="/1617861564011.png" alt="" height="100px" width="100 px"></div>
+                    <div><span>Paytm</span><br><span>Wallet</span></div>
+                </div>
+                <div id="bd11">
+                    <h1>
+                        The Fastest Way to Pay In-store & Online.
+                    </h1>
+                </div>
+                <div id="bd12">
+                    <span>
+                        Load up your Paytm Wallet for free and make payments in a jiffy at over 21 million stores,
+                        websites and apps.
+                    </span>
+                </div>
+                <div id="bd13">
+                    <a href=""> <span>Download Paytm App</span>
+                    </a>
+                </div>
+            </div>
+            <div class="bd2">
+                <img src="/1618577020961.webp" alt="" height="450px" width="550px">
+            </div>
+        </div>
+        <div class="body2">
+            <div class="bd1">
+                <div id="a111">
+                    <div><img src="/1615957674521.png" alt="" height="100px" width="100 px"></div>
+                    <div><span>UPI Money</span><br><span>Transfer</span></div>
+                </div>
+                <div id="bd11">
+                    <h1>
+                        Pay anyone directly from your bank account.
+                    </h1>
+                </div>
+                <div id="bd12">
+                    <span>
+                        Pay anyone, everywhere. Make contactless & secure payments in-stores or online using Paytm
+                        Wallet or Directly from your Bank Account. Plus, send & receive money from anyone.
+                    </span>
+                </div>
+                <div id="bd13">
+                    <a href=""> <span>Download Paytm App</span>
+                    </a>
+                </div>
+            </div>
+            <div class="bd2">
+                <img src="/1626342071104.webp" alt="" height="450px" width="550px">
+            </div>
+        </div>
+        <div class="body2">
+            <div class="bd1">
+                <div id="a111">
+                    <div><img src="/1613622537678.webp" alt="" height="80px" width="200 px"></div>
+                </div>
+                <div id="bd11">
+                    <h1>
+                        Want it?<br>
+No more waiting for it.
+                    </h1>
+                </div>
+                <div id="bd12">
+                    <span>
+                        With Paytm Postpaid, your wishlist doesn't have to be on the waitlist. Shop for the things you want today and pay for them next month.
+
+                    </span>
+                </div>
+                <div id="bd43">
+                    <a href=""> <span>Learn More &nbsp; &nbsp; &gt; </span>
+                    </a>
+                </div>
+            </div>
+            <div class="bd2">
+                <img src="/1626342071104.webp" alt="" height="450px" width="550px">
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

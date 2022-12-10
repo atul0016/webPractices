@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swiggy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Lato', sans-serif;
+    }
+    .leftside{
+        width: 45vw;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        background-color: aqua;
+        padding: 4rem 4rem 4rem 6rem;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav1,.nav2{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+ 
+    .frontbody{
+        margin-left:2rem ;
+        margin-top: 3rem;
+    }
+    .nav2 span{
+
+        padding:10px 25px ;
+    }.nav2 span:nth-child(2){
+        background-color: black;
+        color: white;
+    }
+    .nav1 div{
+        font-size: 30px;position: relative;
+        left:-20px;
+        font-weight: bolder;
+        color: rgb(171, 90, 14);
+    }
+    .frontbody p:nth-child(1){
+        font-size: 35px;
+        color: rgb(54, 54, 54);
+
+    }
+    .frontbody p:nth-child(2){
+        font-size: 20px;
+        margin-top: 4px;
+        color: rgb(189, 189, 189);
+
+    }
+    .frontbody div{
+        font-size: 15px;
+        margin-top: 16px;
+        color: rgb(0, 0, 0);
+        display:flex;
+        justify-content: space-between;
+        width: 42.5vw;
+        border: 2px solid red;
+
+
+    }
+
+    
+    .frontbody div p{
+        font-size: 10px;
+        margin-top: 4px;
+        color: rgb(165, 165, 165);
+
+    }
+</style>
+<body>
+    <header>
+        <div class="leftside">
+            <div class="navbar">
+                <div class="nav1">
+                    <img src="/Swiggy-emblem.png" alt="" height="50px" width="90px">
+                    <div>SWIGGY</div>
+                </div>
+                <div class="nav2">
+                    <span><a href="">Login</a> </span>
+                    <span><a href="">Sign up</a></span>
+                </div>
+            </div>
+            <div class="frontbody">
+                <p>Hungry?</p>
+                <p>Order food from favourite restaurants near you.</p>
+                <div class="1">
+                    <input type="search" placeholder="Enter your delivery location">
+                    <p>Find food</p>
+           </div>
+                <div class="2">
+                    <p>POPULAR CITIES IN INDIA</p>
+                    <p>Ahmedabad Bangalore Chennai Delhi Gurgaon Hyderabad Kolkata Mumbai Pune & more.</p>
+                </div>
+                    
+               
+            </div>
+        </div>
+        <div></div>
+    </header>
+
+</body>
+
+</html>
